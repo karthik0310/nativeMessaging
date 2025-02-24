@@ -31,7 +31,7 @@ class SendMsg(BaseClass):
         with allure.step("Add Sender Contact Number"):
             try:
                 self.clear_field(AppiumBy.XPATH, Locators.TO_TEXT_AREA_XPATH)
-                self.send_keys(AppiumBy.XPATH, Locators.TO_TEXT_AREA_XPATH,"+18014194233")
+                self.send_keys(AppiumBy.XPATH, Locators.TO_TEXT_AREA_XPATH,"8014194233")
                 self.click_element(AppiumBy.XPATH, Locators.CLICK_NUMBER_XPATH)
 
                 self.take_screenshot("Contact_Number_Added")
